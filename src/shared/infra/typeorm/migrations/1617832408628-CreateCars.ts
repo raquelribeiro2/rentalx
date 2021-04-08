@@ -1,4 +1,3 @@
-import { query } from 'express';
 import { MigrationInterface, QueryRunner, Table } from 'typeorm';
 
 export class CreateCars1617832408628 implements MigrationInterface {
@@ -11,8 +10,6 @@ export class CreateCars1617832408628 implements MigrationInterface {
             name: 'id',
             type: 'uuid',
             isPrimary: true,
-            generationStrategy: 'uuid',
-            default: 'uuid_generate_v4()',
           },
           {
             name: 'name',
